@@ -1,0 +1,24 @@
+import numpy as np
+import statistics
+
+X=[12,64,46,25,35,5,42,23,53,64,53,46,85,25,43]
+print("statistics for X")
+a=np.mean(X)
+print("Mean : ",a)
+a=np.std(X)
+print("Std : ",a)
+a=np.var(X)
+print("Varinace:",a)
+
+n=len(X)
+X.sort()
+
+If n%2==0:
+   m1=X[n//2]
+   m2=X[n//2-1]
+   m=(m1+m2)/2
+else:
+   m=X[n//2]
+print("Median :",m)
+
+print("Mode :",statistics.mode(X))
